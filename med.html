@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical project</title>
+
+<h1> <center> DOCTOR  REPORT</center></h1>
+<marquee >
+<h3>Doctors are  like angels on the earth sent to heal and care for people </h3></marquee><marquee direction="right"></marquee>
+<body background="image.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;"></body>
+ </head>   
+<script>
+class GrandParent
+{
+    Name()
+    {
+        var a=prompt ("Enter the Name");
+        document.write("Name : ",a,"<br><br>");
+        var b=prompt("Enter the Age ");
+        document.write("Age :",b,"<br><br>");
+        return b;
+    }
+    BPLevel()
+    {
+        var BP=prompt("Enter the BP Level");
+        document.write("BP :",BP,"<br><br>");
+
+        if(BP>=70&&BP<=90)
+        {
+            document.write("BP Level is Low","<br>");
+            document.write("Disease: Low blood pressure — or hypotension — is a sign of good health, but can be abnormal in certain situations, such as during severe infection.","<br>");
+            document.write("Tablets: Water pills (diuretics), Angiotensin-converting enzyme (ACE) inhibitors ","<br>");
+            document.write("Food: cereals- brown rice, parboiled rice, quinoa, whole grains etc.","<br><br>");
+        }
+        else if(BP>=90 && BP<=120)
+        {
+            document.write("BP Level is Nromal","<br>");
+            document.write("Tips: Typically, a person can keep their blood pressure in the normal range by maintaining a healthy weight through a healthful diet that limits alcohol and salt intake, and by exercising regularly. If they are having trouble with blood pressure, a doctor may be able to prescribe medication to help regulate it.","<br><br>");
+        }
+        else if(BP>=120 && BP<=140)
+        {
+            document.write("BP Level is pre-Hypertension","<br>");
+            document.write("Disease: coronary atherosclerosis, Heart failure, leading to swelling in the legs, weight gain, and shortness of breath, or failure, or Stroke, aortic dissection, vascular dissection, vision issues, memory problems,","<br>");
+            document.write("Tablets: Alpha blockers, Alpha-beta blockers","<br>");
+            document.write("Food: Reducing sodium intake, Exercising more frequently, Losing weight, Treating other conditions that may be contributing such as sleep apnea, limiting alcoho intake, Taking medications that target blood pressure","<br><br>");
+         }
+        else if(BP>=140 && BP<=160)
+        {
+            document.write("BP Level is High Stage2","<br>");
+            document.write("Disease: fainting, dizziness/lightheadedness, nausea,  heart palpitations,fatigue,  blurry vision, injury from falling or loss of consciousness,  organ damage in severe cases","<br>");
+            document.write("Tablets: Aldosterone antagonists","<br>");
+            document.write("Food: Citrus fruits : Citrus fruits, including grapefruit, oranges, and lemons, may have powerful blood-pressure-lowering effects. They’re loaded with vitamins, minerals, and plant compounds that may help keep your heart healthy by reducing heart disease risk factors like high blood pressure","<br><br>");
+        }
+        else
+        {
+            document.write("Invalid Choice","<br><br>" );
+        }
+    }
+    Sugarlevel()
+    {
+        var sugar=prompt("Enter the Sugar Level");
+        document.write("Sugar Level :",sugar,"<br><br>");
+        var n=prompt("1.BeforeFasting, 2.AfterFasting");
+        switch(n)
+        {
+            case "1":
+                {
+                    if(sugar>=80 && sugar<=100)
+                     {
+                        document.write("Sugar Level is Normal","<br><br>");
+
+                     }
+                    else if(sugar>=100 && sugar <= 125)
+                    {
+                        document.write("Indicates you have Prediabetes","<br>");
+                        document.write("Tablet :meltformin","<br><br>");
+                    }
+                    else if(sugar>=126)
+                    {
+                        document.write("Higher indicates you have Diabetes","<br>");
+                        document.write("Tablet: Oral anti","<br><br>");
+                    }
+                    else
+                    {
+                        document.write("Invalid","<br><br>");
+                    }
+                }break;
+            case "2":
+                {
+                    if(sugar>=120 && sugar<=140)
+                    {
+                       document.write("Sugar Level is Normal","<br><br>");
+
+                    }
+                   else if(sugar>=140 && sugar<=160)
+                   {
+                       document.write("Indicates you have Prediabetes","<br><br>");
+                       document.write("Disase:","<br>", "High blood sugar","<br>","Increased thirst and/or hunger","<br>","Blurred vision","<br>","Frequent urination (peeing)","<br>","Headache","<br><br>");
+                       document.write("Tablet : Fortamet, Glumetza","<br><br>");
+                       document.write("Food : Scrambled, boiled, or poached, eggs are packed with protein -- there's 6 grams in a large one. Protein takes longer to digest, which may help keep blood sugar levels steady. For an on-the-go meal, make a sandwich with a scrambled egg, low-fat cheese, and tomato slice on a whole-wheat English muffin","<br><br>");
+                   }
+                   else if(sugar>=200)
+                   {
+                       document.write("Higher indicates you have Diabetes","<br><br>");
+                       document.write("Disease: Cardiovascular disease","<br>", " Nerve damage (neuropathy)","<br>", "Kidney damage (diabetic nephropathy) or kidney failure","<br>","Damage to the blood vessels of the retina (diabetic retinopathy) that could lead to blindness.","<br><br>");
+                       document.write("Tablet: Metformin","<br><br>");
+                       document.write("Food: Beans. Kidney, pinto, navy or black beans are packed with vitamins and minerals such as magnesium and potassium. , Dark green leafy vegetables. ...","<br><br>");
+                   }
+                   else
+                   {
+                       document.write("Invalid","<br><br>");
+                   }
+                }
+                break;
+                default :
+                document.write("Not !","<br><br>");
+        }
+        
+    }
+    Salt()
+    {
+        var sal=prompt("Enter Salt Level");
+        document.write("Salt Level :",sal,"<br><br>");
+        {
+            if(sal<=135)
+            {
+                document.write("Salt level is Low(Hyponatermia)","<br><br>");
+            }
+            else if(sal>=135 && sal<=145)
+            {
+                document.write("Salt level is Normal","<br><br>");
+            }
+            else if(sal>=145)
+            {
+                document.write("Hypernatermia","<br><br>");
+            }
+            else
+            {
+                document.write("Invalid","<br><br>");
+            }
+        }
+    }
+    Cholestrol()
+    {
+        var ch=prompt("Enter the Cholestrol Level");
+        document.write("Cholestrol Level is: ",ch,"<br><br>");
+
+        if(ch>=240)
+        {
+            document.write("Cholestrol Level is Dangerous","<br>");
+            document.write("Tablets: Statins, Atorvastatin (Lipitor)","<br>");
+            document.write("Food: a variety of healthy protein-rich foods (especially fish and seafood), legumes (such as beans and lentils), nuts and seeds. Smaller amounts of eggs and lean poultry can also be included in a heart-healthy eating pattern. If choosing red meat, make sure it is lean and limit to one to three times a week.","<br><br>");
+        }
+        else if(ch>=200 && ch<=239)
+        {
+            document.write("At-Risk","<br>");
+            document.write("Tablets: Choline, Evening Primrose,  Ezetimibe,  Fenofibric Acid. ...","<br>");
+            document.write("Food: Include legumes (or lentils, split peas), beans (such as haricot beans, kidney beans, bean mixes).","<br><br>");
+        }
+        else if(ch<200)
+        {
+            document.write("Heart Healthy","<br><br>");
+        }
+        else{
+            document.write("Invalid!","<br><br>");
+        }
+    }
+    Hemoglobin()
+    {
+        var hb=prompt("Enter the Hemoglobin Level");
+        document.write("Hemoglobin Level :",hb,"<br><br>");
+        var u=prompt("3.female, 4.male")
+        switch(u)
+        {
+            case "3":
+            {
+                if(hb>=13.0 && hb<=16.0 )
+                {
+                    document.write("Hemoglobin Level is Normal","<br><br>");
+                }                
+                else if(hb>=16.6)
+                {
+                    document.write("HB Level high","<br>");
+                    document.write("Tablets: haematinics","<br><br>");
+                }
+                else if(hb<=13.2)
+                {
+                    document.write("HB Level is Low(Anemia)","<br>");
+                    document.write("Tablets: Carbonyl Iron, Cyanocobalamin (Vitamin B12)","<br><br>");
+                }
+                else
+                {
+                    document.write("Invalid","<br><br>");
+                }
+            }
+            break;
+            case "4" :
+            {
+                if(hb>=12.0 && hb<=16.0)
+                {
+                    document.write("HB Level isNormal","<br><br>");
+                }
+                else if(hb<=11.6)
+                {
+                    document.write("HB Level is Low","<br>");
+                    document.write("Tablets: Hydroxocobalamin","<br><br>");
+                }
+                else if(hb>=15)
+                {
+                    document.write("HB Level is High","br>");
+                    document.write("Tablets: Haematinics combination","<br><br>");
+                }
+                else
+                {
+                    document.write("Invalid","<br><br>");
+                }
+            }
+            break;
+            default :
+            document.write("Consult a Doctor","<br><br>");
+        }
+        
+    }
+}
+class Parent extends GrandParent
+{
+    Par()
+    {
+        const weight = prompt("Enter your Weight: ");
+        const height = prompt("Enter your Height: ");
+
+        const bmi = weight / (height * height);
+        document.write("Your BMI (Body Mass Index) is: "+ bmi,"<br><br>");
+
+        if(bim<18.5)
+        {
+            document.write("your are in under weight.You should intake calories in food and also you should gain some weight to improve your health.","<br><br>");
+        }
+        else if(bmi>=18.5 && bim<=24.9)
+        {
+            document.write("Your weight is normal. Keep it up your food structure.","<br><br>");
+        }
+        else if(bmi>=25 && bmi<=29.9)
+        {
+            document.write("You are overweight. You should reduce your calorie food and intake some oates.","<br><br>");
+        }
+        else
+        {
+            document.write("You should consult a doctor for a diet plan","<br>");
+        }
+    }
+}
+const s=new Parent();
+s.Name();
+s.BPLevel();
+s.Sugarlevel();
+s.Salt();
+s.Cholestrol();
+s.Hemoglobin();
+s.Par();
+</script>
+
+</html>
